@@ -1,0 +1,36 @@
+.background {
+  viewport-fill: black;
+}
+
+text {
+  fill: white;
+  font-family: Tungsten;
+  text-anchor: middle;
+  text-length: 200;
+}
+
+.icon {
+  fill: white;
+}
+
+#battery {
+  text-anchor: start;
+  font-size: 20;
+}
+
+#hr {
+  text-anchor: end;
+  font-size: 20;
+}
+
+#time {
+  font-size: 50;
+}
+
+#date {
+  font-size: 30;
+}
+
+.stat {
+  font-size: 20;
+}

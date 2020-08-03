@@ -1,0 +1,63 @@
+<svg class="background">
+  <!-- Battery -->
+  <line x1="6" y1="6" x2="32" y2="6" fill="white" stroke-width="2" />
+  <line x1="6" y1="6" x2="6" y2="20" fill="white" stroke-width="2" />
+  <line x1="6" y1="20" x2="32" y2="20" fill="white" stroke-width="2" />
+  <line x1="32" y1="6" x2="32" y2="20" fill="white" stroke-width="2" />
+  
+  <arc x="29" y="9" width="8" height="8" fill="white" arc-width="2" start-angle="0" sweep-angle="180" />
+  
+  <rect x="8" y="8" height="10" width="0" fill="green" id="battery-fill" />
+  
+  <text id="battery" x="40" y="20" />
+  
+  <!-- Heart rate -->
+  <text id="hr" x="100%-10" y="20" />
+  <image href="icons/heart.png" x="100%-70" y="3" width="20" height="20" fill="red" />
+  
+  <!-- Time and Date -->
+  <svg x="50%" y="74" class="container">
+    <text id="time" x="0" y="0"/>
+    <text id="date" x="0" y="40"/>
+  </svg>
+  
+  <!-- Steps -->
+  <svg x="6" y="134">
+    <arc id="steps" x="0" y="0" height="70" width="70" fill="green" arc-width="5" start-angle="0" sweep-angle="0" />
+    <image href="icons/steps.png" x="19" y="19" width="32" height="32" fill="white" />
+    <image id="steps-char" href="characters/hamilton.png" x="5" y="5" width="60" height="60" opacity="0" />
+    <text id="steps-label" class="stat" x="35" y="90" />
+  </svg>
+  
+  <!-- Distance -->
+  <svg x="115" y="134">
+    <arc id="distance" x="0" y="0" height="70" width="70" fill="orange" arc-width="5" start-angle="0" sweep-angle="0" />
+    <image href="icons/dist.png" x="19" y="19" width="32" height="32" fill="white" />
+    <image id="distance-char" href="characters/king.png" x="5" y="5" width="60" height="60" opacity="0" />
+    <text id="distance-label" class="stat" x="35" y="90" />
+  </svg>
+  
+  <!-- Elevation -->
+  <svg x="224" y="134">
+    <arc id="elevationGain" x="0" y="0" height="70" width="70" fill="pink" arc-width="5" start-angle="0" sweep-angle="0" />
+    <image href="icons/floors.png" x="19" y="19" width="32" height="32" fill="white" />
+    <image id="elevationGain-char" href="characters/jefferson.png" x="5" y="5" width="60" height="60" opacity="0" />
+    <text id="elevationGain-label" class="stat" x="35" y="90" />
+  </svg>
+  
+  <!-- Minutes -->
+  <svg x="61" y="204">
+    <arc id="activeMinutes" x="0" y="0" height="70" width="70" fill="yellow" arc-width="5" start-angle="0" sweep-angle="0" />
+    <image href="icons/duration.png" x="19" y="19" width="32" height="32" fill="white" />
+    <image id="activeMinutes-char" href="characters/burr.png" x="5" y="5" width="60" height="60" opacity="0" />
+    <text id="activeMinutes-label" class="stat" x="35" y="90" />
+  </svg>
+  
+  <!-- Calories -->
+  <svg x="170" y="204">
+    <arc id="calories" x="0" y="0" height="70" width="70" fill="#2490DD" arc-width="5" start-angle="0" sweep-angle="0" />
+    <image href="icons/cals.png" x="19" y="19" width="32" height="32" fill="white" />
+    <image id="calories-char" href="characters/eliza.png" x="5" y="5" width="60" height="60" opacity="0" />
+    <text id="calories-label" class="stat" x="35" y="90" />
+  </svg>
+</svg>
