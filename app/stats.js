@@ -3,18 +3,18 @@ import { me as appbit } from "appbit";
 import { today, goals } from "user-activity";
 import { display } from "display";
 
-import { round2 } from "./utils.js";
+import { round2, leaf } from "./utils.js";
 
 const defaultGoals = {
   steps: 10000,
   calories: 2000,
-  activeMinutes: 30,
+  "activeZoneMinutes.total": 30,
   distance: 8000,
   elevationGain: 10,
 }
 
 const setStat = (type) => {
-  const todayActivity = today.adjusted[type];
+  const todayActivity = leaf(today.adjusted, type);
   const goal = goals[type] || defaultGoals[type];
 
   // Show progress
@@ -32,6 +32,6 @@ export const setActivity = () => {
   setStat("steps");
   setStat("distance");
   setStat("elevationGain");
-  setStat("activeMinutes");
+  setStat("activeZoneMinutes.total");
   setStat("calories");
 };
